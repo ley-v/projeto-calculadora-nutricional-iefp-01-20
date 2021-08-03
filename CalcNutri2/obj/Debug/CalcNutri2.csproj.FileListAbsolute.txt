@@ -1,0 +1,14 @@
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\bin\Debug\CalcNutri2.exe.config
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\bin\Debug\CalcNutri2.exe
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\bin\Debug\CalcNutri2.pdb
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.csprojAssemblyReference.cache
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.frm_principal.resources
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.Properties.Resources.resources
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.csproj.GenerateResource.cache
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.csproj.CoreCompileInputs.cache
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.exe
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.pdb
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.frm_trocarPlano.resources
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.frm_adicionarEditarAlimentos.resources
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.frm_adicionarEditarRefeicao.resources
+C:\Users\Ley\source\repos\CalcNutri2\CalcNutri2\obj\Debug\CalcNutri2.frm_incluirEditarPlano.resources

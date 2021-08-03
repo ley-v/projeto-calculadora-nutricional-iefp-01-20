@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3186DC53-35F5-4B65-96AE-F381A15A634C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CalcNutri2</RootNamespace>
+    <AssemblyName>CalcNutri2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConexaoSQLServer.cs" />
+    <Compile Include="frm_adicionarEditarAlimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_adicionarEditarAlimentos.Designer.cs">
+      <DependentUpon>frm_adicionarEditarAlimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_adicionarEditarRefeicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_adicionarEditarRefeicao.Designer.cs">
+      <DependentUpon>frm_adicionarEditarRefeicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_incluirEditarPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_incluirEditarPlano.Designer.cs">
+      <DependentUpon>frm_incluirEditarPlano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_principal.Designer.cs">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_iniciarTrocarPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_iniciarTrocarPlano.Designer.cs">
+      <DependentUpon>frm_iniciarTrocarPlano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRUDBancoDeDados.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TratamentoDeDados.cs" />
+    <EmbeddedResource Include="frm_adicionarEditarAlimentos.resx">
+      <DependentUpon>frm_adicionarEditarAlimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_adicionarEditarRefeicao.resx">
+      <DependentUpon>frm_adicionarEditarRefeicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_incluirEditarPlano.resx">
+      <DependentUpon>frm_incluirEditarPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_principal.resx">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_iniciarTrocarPlano.resx">
+      <DependentUpon>frm_iniciarTrocarPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
